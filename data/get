@@ -1,0 +1,27 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+if [ -r .cookie ]; then
+  . .cookie
+fi
+
+export TZ=EST
+
+thisyear="$(date +%Y)"
+thismonth="$(date +%m)"
+thisday="$(date +%d)"
+
+for day in {1..25}; do
+  if [ "$thisyear" -ne 2020 -o "$thismonth" -ne 12 -o "$day" -gt "$thisday" ]; then
+    exit 0
+  fi
+
+  filename="$day".input
+
+  if [ -r "$filename" ]; then
+    continue # avoid fetching same file twice
+  fi
+
+  curl -sS -o "$filename" -b "$AOC_COOKIE" https://adventofcode.com/2020/day/"$day"/input
+done

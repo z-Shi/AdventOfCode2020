@@ -1,3 +1,7 @@
+# aoc2020 specific
+.cookie
+.secret
+
 # Haskell
 dist
 dist-*
