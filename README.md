@@ -7,7 +7,7 @@ I will have a separate folder for each language, with the goal of eventually hav
 # Progress Tracker
 - [ ] Day 1
   - [ ] Java
-  - [ ] Python
+  - [x] Python
   - [ ] Haskell
 
 # Other
