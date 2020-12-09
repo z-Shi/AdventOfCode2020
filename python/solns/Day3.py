@@ -9,28 +9,34 @@ file = '../../data/3.input'
 
 # Retrieve Data from File
 data = read_rows(file)
-
-# Part One
-row = 0
-col = 0
-
 no_of_cols = len(data[0])
 no_of_rows = len(data)
 
+
+# Functions for Task(s)
+def count_trees(column_step, row_step):
+    no_of_trees = 0
+    row = 0
+    col = 0
+
+    while row < no_of_rows:
+        if col >= no_of_cols:
+            col = col % no_of_cols
+
+        if data[row][col] == '#':
+            no_of_trees += 1
+
+        row += row_step
+        col += column_step
+
+    return no_of_trees
+
+
+# Part One
 cols_step = 3
 rows_step = 1
 
-trees = 0
-
-while row < no_of_rows:
-    if col >= no_of_cols:
-        col = col % no_of_cols
-
-    if data[row][col] == '#':
-        trees += 1
-
-    row += rows_step
-    col += cols_step
+trees = count_trees(cols_step, rows_step)
 
 print('Day 3 Part 1: ' + str(trees))
 
@@ -43,24 +49,14 @@ for slope in slopes:
     tree_count = 0
     cols_step = slope[0]
     rows_step = slope[1]
-    row = 0
-    col = 0
 
-    while row < no_of_rows:
-        if col >= no_of_cols:
-            col = col % no_of_cols
+    trees = count_trees(cols_step, rows_step)
 
-        if data[row][col] == '#':
-            tree_count += 1
-
-        row += rows_step
-        col += cols_step
-
-    tree_entries.append(tree_count)
+    tree_entries.append(trees)
 
 result = 1
 
-for tree_count in tree_entries:
-    result *= tree_count
+for entry in tree_entries:
+    result *= entry
 
 print('Day 3 Part 2: ' + str(result))
