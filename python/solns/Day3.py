@@ -46,12 +46,7 @@ slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 tree_entries = []
 
 for slope in slopes:
-    tree_count = 0
-    cols_step = slope[0]
-    rows_step = slope[1]
-
-    trees = count_trees(cols_step, rows_step)
-
+    trees = count_trees(slope[0], slope[1])
     tree_entries.append(trees)
 
 result = 1
