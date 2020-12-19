@@ -1,4 +1,4 @@
-i# AdventOfCode2020
+# AdventOfCode2020
 
 This repository will store my solutions to the 2020 Advent of Code, I will be aiming to solve the tasks in Python, Java and ideally Haskell (learning, success tbc...).
 
@@ -22,6 +22,10 @@ I will have a separate folder for each language, with the goal of eventually hav
   - [x] Python
   - [ ] Haskell
 - [ ] Day 5
+  - [ ] Java
+  - [x] Python
+  - [ ] Haskell
+- [ ] Day 6
   - [ ] Java
   - [ ] Python
   - [ ] Haskell
