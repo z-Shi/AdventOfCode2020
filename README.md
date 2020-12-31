@@ -37,6 +37,14 @@ I will have a separate folder for each language, with the goal of eventually hav
   - [ ] Java
   - [x] Python
   - [ ] Haskell
+- [x] Day 9
+  - [ ] Java
+  - [x] Python
+  - [ ] Haskell
+- [ ] Day 10
+  - [ ] Java
+  - [ ] Python
+  - [ ] Haskell
 
 # Other
 Came across this repo, which will have an accompanying YouTube series which appears to solve the challenges in Haskell (will likely be looking at this as a point of reference when solving challenges) - seems cool so worth having a look at: https://github.com/haskelling/aoc2020
