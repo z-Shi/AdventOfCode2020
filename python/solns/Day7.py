@@ -12,7 +12,7 @@ data = read_rows(file)
 search_type = 'shiny gold'
 
 
-# Functions
+# Part One Functions
 def count_bags(bags, bag_name):
     bag_count = 0
     chosen_bag = bags[bag_name]
