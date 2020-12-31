@@ -38,3 +38,26 @@ value = part_one(data)
 
 # Day 10 Part 1
 print(f'Day 10 Part 1: {value}')
+
+
+# Part Two Functions
+def part_two(numbers):
+    solution = {0: 1}
+
+    for number in sorted(numbers):
+        solution[number] = 0
+        if number - 1 in solution:
+            solution[number] += solution[number - 1]
+        if number - 2 in solution:
+            solution[number] += solution[number - 2]
+        if number - 3 in solution:
+            solution[number] += solution[number - 3]
+
+    return solution[max(numbers)]
+
+
+# Part Two
+value = part_two(data)
+
+# Day 10 Part 2
+print(f'Day 10 Part 2: {value}')
