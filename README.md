@@ -29,7 +29,11 @@ I will have a separate folder for each language, with the goal of eventually hav
   - [ ] Java
   - [x] Python
   - [ ] Haskell
-- [ ] Day 7 
+- [x] Day 7 
+  - [ ] Java
+  - [x] Python
+  - [ ] Haskell
+- [ ] Day 8
   - [ ] Java
   - [ ] Python
   - [ ] Haskell
