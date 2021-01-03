@@ -52,3 +52,34 @@ result = part_one(earliest_departure_time, actual_departure_time, actual_bus)
 
 # Day 13 Part 1
 print(f'Day 13 Part 1: {result}')
+
+
+# Part Two Functions
+def get_full_bus_list(input_data):
+    bus_list = []
+
+    for entry in input_data[1].split(','):
+        bus_list.append(entry)
+
+    return bus_list
+
+
+def part_two(bus_list):
+    timestamp, step = 100000000000000, 1
+    bus_details = [(int(bus), bus_index) for bus_index, bus in enumerate(bus_list) if bus != 'x']
+
+    for bus_id, offset in bus_details:
+        while (timestamp + offset) % bus_id != 0:
+            timestamp += step
+
+        step *= bus_id
+
+    return timestamp
+
+
+# Part Two
+buses = get_full_bus_list(data)
+result = part_two(buses)
+
+# Day 13 Part 2
+print(f'Day 13 Part 2: {result}')
