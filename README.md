@@ -47,7 +47,7 @@ I will have a separate folder for each language, with the goal of eventually hav
   - [ ] Haskell
 - [ ] Day 11
   - [ ] Java
-  - [ ] Python
+  - [x] Python
   - [ ] Haskell
 
 # Other
