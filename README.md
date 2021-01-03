@@ -53,6 +53,10 @@ I will have a separate folder for each language, with the goal of eventually hav
   - [ ] Java
   - [x] Python
   - [ ] Haskell
+- [ ] Day 13
+  - [ ] Java
+  - [ ] Python
+  - [ ] Haskell
 
 
 # Other
