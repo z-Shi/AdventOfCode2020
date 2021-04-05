@@ -61,13 +61,13 @@ I will have a separate folder for each language, with the goal of eventually hav
   - [ ] Java
   - [x] Python
   - [ ] Haskell
-- [x] Day 15
+- [ ] Day 15
   - [ ] Java
   - [x] Python
   - [ ] Haskell
 - [ ] Day 16
   - [ ] Java
-  - [ ] Python
+  - [x] Python
   - [ ] Haskell
 
 # Other
